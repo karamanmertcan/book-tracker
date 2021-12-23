@@ -152,7 +152,14 @@ const Tab3: React.FC<Props> = ({ router }) => {
                   </IonCol>
                 </IonRow>
               </div>
-              <IonButton expand='full'>Kitap Ekle</IonButton>
+              <IonRow
+                style={{
+                  marginTop: '50px'
+                }}>
+                <IonCol>
+                  <IonButton expand='full'>Kitap Ekle</IonButton>
+                </IonCol>
+              </IonRow>
             </IonGrid>
           </div>
         </IonModal>
