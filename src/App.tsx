@@ -35,6 +35,7 @@ import firebase from 'firebase/app';
 
 /* Theme variables */
 import './theme/variables.css';
+import Login from './pages/login/Login';
 
 setupIonicReact();
 
@@ -55,6 +56,9 @@ const App: React.FC = () => (
           <Route exact path='/'>
             <Redirect to='/tab1' />
           </Route>
+          <Route exact path='/login'>
+            <Login />
+          </Route>
         </IonRouterOutlet>
         <IonTabBar slot='bottom'>
           <IonTabButton tab='hesabim' href='/tab1'>
@@ -67,7 +71,7 @@ const App: React.FC = () => (
           </IonTabButton>
           <IonTabButton tab='tab3' href='/tab3'>
             <IonIcon icon={square} />
-            <IonLabel>Liderlik Tablosu</IonLabel>
+            <IonLabel>Kitap Ekle</IonLabel>
           </IonTabButton>
         </IonTabBar>
       </IonTabs>

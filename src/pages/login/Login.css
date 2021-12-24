@@ -1,0 +1,18 @@
+.title__container {
+  padding-top: 3rem;
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__container {
+  width: 50%;
+  height: 200px;
+}
